@@ -1,0 +1,71 @@
+{
+  "name": "mercadolibre-clone",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "bootstrap": "^4.5.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.2.0",
+    "jsdoc": "^3.6.6",
+    "jsonwebtoken": "^8.5.1",
+    "pg-promise": "^10.8.1",
+    "prop-types": "^15.7.2",
+    "randomstring": "^1.1.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "reactstrap": "^8.7.1",
+    "secure-ls": "^1.2.6",
+    "superagent": "^6.1.0",
+    "uuid": "^8.3.2",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "export INLINE_RUNTIME_CHUNK=false && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "nodemon server.js & react-scripts start",
+    "prod": "npm run build && nodemon server.js",
+    "deploy": "pm2 start ecosystem.config.js --env production",
+    "restart_deploy": "pm2 restart 0",
+    "stop_deploy": "pm2 stop 0",
+    "delete_deploy": "pm2 delete backend-app",
+    "monitor_deploy": "pm2 monit",
+    "status_deploy": "pm2 status",
+    "logs_deploy": "pm2 logs 0",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000",
+  "author": "Valentina hurtado",
+  "license": "MIT"
+}

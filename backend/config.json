@@ -1,0 +1,12 @@
+{
+    "port": 4000,
+    "production": {
+        "ENCRYPTION_KEY": "{z$7U?!#BPX/M~f-:d8eAd3wjRC%UdB}",
+        "URL_ML" : "https://api.mercadolibre.com"
+    },
+    "qa": {},
+    "development": {
+        "ENCRYPTION_KEY": ".}F+y,*V4>crkD>`$L@]Xk=XW-<S@'as",
+        "URL_ML" : "https://api.mercadolibre.com"
+    }
+}
