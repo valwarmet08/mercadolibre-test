@@ -1,5 +1,5 @@
 ## About The Project
-Contruccion de clone de mercadolibre con las siguientes tres vistas:
+Contrucción de clone de mercadolibre con las siguientes tres vistas:
 - Caja de búsqueda○
 - Resultados de la búsqueda
 - Detalle del producto
@@ -26,7 +26,7 @@ El proyecto se refresca automaticamente si cambiamos alguno de los archivos .\sr
 
 ### `npm prod`
 
-Inicia el proyecto en modo produccion.\
+Inicia el proyecto en modo producción.\
 [http://localhost:3000](http://localhost:3000)
 
 El proyecto se refresca automaticamente si cambiamos alguno de los archivos .\src
